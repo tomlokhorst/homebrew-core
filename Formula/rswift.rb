@@ -2,8 +2,8 @@ class Rswift < Formula
   desc "Get strong typed, autocompleted resources like images, fonts and segues"
   homepage "https://github.com/mac-cain13/R.swift"
   url "https://github.com/mac-cain13/R.swift.git",
-    :tag => "v1.3.0",
-    :revision => "c7b9104364315f9dfa0997feff5bc471c45aa5ec"
+    :tag => "v2.3.0",
+    :revision => "d49c00dfe93066d5ab61ab7ae92965857c98d60f"
 
   bottle do
     cellar :any_skip_relocation
@@ -11,7 +11,7 @@ class Rswift < Formula
     sha256 "25dd772c3872f84f4939fc545eeac76ffa84f3d3b081cdc24ba4da570cc84bd7" => :yosemite
   end
 
-  depends_on :xcode => "7.0"
+  depends_on :xcode => "7.3"
 
   def install
     xcodebuild "-configuration", "Release", "-scheme", "rswift", "SYMROOT=symroot", "OBJROOT=objroot"
